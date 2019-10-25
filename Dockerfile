@@ -7,15 +7,15 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | b
 RUN export NVM_DIR=$HOME/.nvm
 RUN echo $HOME
 RUN echo $NVM_DIR
-RUN source "$NVM_DIR/nvm.sh"
-RUN source "$NVM_DIR/bash_completion"
+# RUN source "$NVM_DIR/nvm.sh"
+# RUN source "$NVM_DIR/bash_completion"
 
-RUN echo "==================="
-RUN cat /etc/profile
-RUN echo "==================="
+# RUN echo "==================="
+# RUN cat /etc/profile
+# RUN echo "==================="
 
-RUN source /etc/profile
+# RUN source /etc/profile
 
-RUN nvm install 11.11.0
+# RUN nvm install 11.11.0
 
 
