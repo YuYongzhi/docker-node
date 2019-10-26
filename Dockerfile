@@ -1,5 +1,5 @@
 #基于 centos7 构建 node 环境
-FROM daocloud.io/yuyongzhi/centos7:latest as source
+FROM yuyongzhi/centos7:latest as source
 
 SHELL ["/bin/bash", "-c"]
 
