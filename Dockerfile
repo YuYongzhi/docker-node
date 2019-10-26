@@ -11,4 +11,6 @@ RUN echo '' >> /etc/profile \
   && echo 'source $NVM_DIR/bash_completion' >> /etc/profile \
   && echo '' >> /etc/profile \
   && source /etc/profile \
-  && nvm install 11.11.0
+  && nvm install 11.11.0 \
+  && ln -s `type -p node` /usr/local/sbin/node \
+  && ln -s `type -p npm` /usr/local/sbin/npm
