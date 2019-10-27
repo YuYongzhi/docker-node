@@ -13,4 +13,5 @@ RUN echo '' >> /etc/profile \
   && source /etc/profile \
   && nvm install 11.11.0 \
   && ln -s `type -p node` /usr/local/sbin/node \
-  && ln -s `type -p npm` /usr/local/sbin/npm
+  && ln -s `type -p npm` /usr/local/sbin/npm \
+  && echo 'source /etc/profile' >> ~/.bashrc
